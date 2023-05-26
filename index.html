@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio CCSS / Roberto Anselmi</title>
     <link rel="Stylesheet"href="./styles.css" />
 </head>
 <body>
+    <H1>Ejercicio CCSS - Roberto Anselmi</h1>
     <Section>
         <Article>
-            <H1>¿Qué es CCSS?</H1>
+            <H2>¿Qué es CCSS?</H2>
             <P1>Abreviado en sus siglas en inglés, Cascading Style Sheets, que significa hojas de estilo en cascada, el CSS es una función que se agrega a HTML que proporciona tanto a los desarrolladores de sitios Web, así como a los usuarios, más control sobre cómo se muestran las páginas. Con CSS, los diseñadores y los usuarios pueden crear hojas de estilo que definen cómo aparecen los diferentes elementos, como los encabezados y los enlaces. Estas hojas de estilo se pueden aplicar a cualquier página Web, y nos permite optimizarla para mejorar su posicionamiento.</P1>
         </Article>
         
@@ -18,19 +19,16 @@
     <br>
     <Section>
         <Article>
-            <H1>** Regla de CCSS Detallado **</H1>
-           
-            <P2>h1</P2> 
-            <P12>&emsp;&emsp;&emsp;&emsp;Selector</P12><br>
-            <P3>Color: red</P3>
-            <P13>&emsp;Declaración</P13><br>
-            <P4>Color</P4>
-            <P14>&emsp;&emsp;Propiedad</P14><br>
-            <P5>red &emsp;&emsp;</P5>
-            <P15> Valor</P15><br>
-            <P6>Todo &emsp;&emsp;</P6>
-            <P16>* Regla de CCSS * </P16>
-        
+            <H2>Partes de una regla CCSS</H2>
+            <P2> Una regla de CCSS esta compuesta por:</P2><BR><BR>
+            <ul> <H3>"ejemplo:     h1 { color:red };"</H3>
+
+            <li><P1>Selector</P1><P2 Class="xtab"> En el ejemplo es el elemento </P2><P3 class="xitbl"> h1 </P3></li>
+            <li><P1>Declaración</P1><P2 Class="xtab"> En el ejemplo es la instrucción</P2><P3 class="xitbl"> { color: red; } </P3> </li>
+            <li><P1>Propiedad</P1><P2 Class="xtab"> En el ejemplo es la palabra </P2> <P3 class="xitbl"> color </P3> </li>
+            <li><P1>Valor</P1><P2 Class="xtab"> En el ejemplo es la palabra </P2> <P3 class="xitbl"> red </P3> </li>
+
+            </ul>
         
 
         </Article>
@@ -39,34 +37,70 @@
     <br>
     <Section>
         <Article>
-            <H1>** Ejemplos Conceptos CCSS **</H1>
-           
-            <P22>Selectores;</P22> 
-            <P32>Este texto corresponde al elemento P32 el cual debe salir en rojo</P32><br>
-            <P23 >Especificidad</P23>
-            <P33 id="xlabel">La clase xlabel fuerza que el color a usar en esta linea sea azul </P33><br>
-            <P24>Cascada</P24>
-            <P34 id="xlabel" class="xclass">esta linea esta compuesta por el id xlabel azul  y la clase xclass marrón. Por cascada aplica la marrón</P34><br>
-            <P25>Herencia</P25>
-            <Div Class="her0">
-                <h2>Este titulo hereda el color del DIV Her0 el cual es verde</h2>
-                <P35a class="her1">Texto principal subordinado a her1 debe ser celeste</P35a><br>
+            <H2>** Conceptos CCSS **</H2>
+            <P2> Los conceptos importantes de CCSS son los siguientes:</P2><BR><BR>
+            <UL>
+                <Li>
                 <Div>
-                    <P35b Class="her2"><br>
-                        Texto Subordinado 1
-                        <P35c><br>
-                            Texto Subordinado 1 tiene asignado el color Marron Arena asociado a la clase her2... no se que color es ese...
-                        </P35c>
-                    </P35b><br> 
-                </Div>    
+                    <H3>Selectores</H3>
+                    <P11>los selectores se utilizan para delimitar los elementos html. El estilo se puede asignar a nivel del Selector.</P11> <BR>
+                    <P11>Ejemplo:</P11><BR>
+                    <P22>El titulo "Ejercicio CCSS Esta condicionado a nivel de elemento H1. Color Blanco y Fondo Azul</P22><BR>           
+                </Div>
+                </Li>
+                <Li>
                 <Div>
-                        <P35c><br>
-                            Texto Subordinado 3 este texto al ser dependiente de la clase her0, hereda su color (verde)
-                        </P35c>
-                </Div>                   
-            </Div>
+                    <H3>Especificidad</H3>
+                    <P11>La especificidad en CSS es un grupo de reglas aplicadas a los selectores CSS para determinar qué estilo se aplica a un elemento. Cuanto más específico sea un selector, mayor será su valor en puntos y más probable será que esté presente en el estilo del elemento.</P11>
+                    <BR>
+                    <P11>Ejemplo:</P11><BR>
+                        <P33 class="xlabelextab">La clase xlabelextab fuerza que el color a usar en esta linea sea azul </P33<BR>           
+    
+                </Div>
+            </Li>
+            <Li>                
+                <Div>
+                    <H3>Cascada</H3>
+                    <P11>Cada tipo de selector recibe puntos que indican su especificidad, y se suman los puntos de todos los selectores que hayas utilizado. para calcular la especificidad total del selector.</P11>
+                    <UL>
+                        <lI>Etiqueta: 1</li>
+                        <lI>Clase: 10</li>
+                        <lI>id: 100</li>
+                        <lI>inline: 1000</li>
+                        <lI>important: infinito</li>
+                        </UL>  
+                        <BR>
+                            <P11>Ejemplo:</P11><BR>
+                            <P34 id="xlabel" class="xclass">esta linea esta compuesta por el id xlabel azul  y la clase xclass marrón. Por cascada aplica la marrón</P34><br>           
+                    </Div>
+            </Li>
+            <Li>
+                <Div>
+                    <H3>Herencia</H3>
+                    <P11>Si un elemento no tiene un valor en cascada para una determinada propiedad, puede heredar uno de un elemento antecesor..</P11>
+                    <BR>
+                        <P11>Ejemplo:</P11><BR>
+                            <Div Class="her0">
+                                <h2>Este titulo hereda el color del DIV Her0 el cual es verde</h2>
+                                <P35a class="her1">Texto principal subordinado a her1 debe ser celeste</P35a><br>
+                                <Div>
+                                    <P35b Class="her2"><br>
+                                        Texto Subordinado 1
+                                        <P35c><br>
+                                            Texto Subordinado 1 tiene asignado el color Marron Arena asociado a la clase her2... no se que color es ese...
+                                        </P35c>
+                                    </P35b><br> 
+                                </Div>    
+                                <Div>
+                                        <P35c><br>
+                                            Texto Subordinado 3 este texto al ser dependiente de la clase her0, hereda su color (verde)
+                                        </P35c>
+                                </Div>                   
+                            </Div>                            
+                </Div>
 
-        
+            </UL>
+            
 
         </Article>
         

@@ -1,13 +1,17 @@
-h1 {
+h1{
+    color: white;
+    background-color: royalblue;
+  
+}
+h2 {
     color: green;
 }
-p2 {
-    color: black;
+
+p22 {
+    position: absolute;
+    left: 110px;
 }
 
-p32 {
-    color: red;
-}
 
 .xlabel {
     color: blue;
@@ -15,6 +19,8 @@ p32 {
 
 .xclass {
     color: brown;
+    position: absolute;
+    left: 110px;    
 }
 
 .her0 {
@@ -27,4 +33,21 @@ p32 {
 
 .her2 {
     color: sandybrown
+}
+.xtab {
+        position: absolute;
+        left: 150px;
+}
+
+.xitbl {
+    position: absolute;
+    left: 360px;
+    font-style: italic;
+}
+
+.xlabelextab {
+    color: blue;
+    position: absolute;
+    left: 110px;
+    
 }
